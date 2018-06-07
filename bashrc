@@ -1,17 +1,5 @@
 #!/usr/bin/env bash
 
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
-export HISTFILESIZE=20000
-shopt -s histappend
-shopt -s checkwinsize
-shopt -s globstar
-
-export VISUAL=vim
-export EDITOR=vim
-
-export PATH="/opt/puppetlabs/bin:$PATH"
-
 # Set up colors for directories and filetypes
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
